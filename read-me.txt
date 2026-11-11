@@ -1,0 +1,41 @@
+This project is a static poster website. The intention is for this site to be hosted on a service like GitHub pages for free so ensuring that the structure of the site supports this is important. 
+
+The only information that I can find about this company website is included in their google business profile - https://www.google.com/maps/place/Lincs+Haulage/@52.2633337,-2.058847,835m/data=!3m1!1e3!4m14!1m7!3m6!1s0x4870eb5a0403754d:0x4982eb1c8265eeed!2sStables+At+Woolmere+Green!8m2!3d52.2623669!4d-2.0659269!16s%2Fg%2F11yqqykwwq!3m5!1s0x4870eb6c7f87fe3d:0x44623c07d64f2312!8m2!3d52.2633337!4d-2.058847!16s%2Fg%2F11z3p683v7?entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D 
+
+This includes their address, the maps location itself, two images, the phone number, Business name (Lincs Haulage), can you fetch this information from the maps link above (download images locally) and opening times: 
+
+Wednesday
+7 am–6 pm
+
+Thursday
+7 am–6 pm
+
+Friday
+7 am–6 pm
+
+Saturday
+8 am–5 pm
+
+Sunday
+Closed
+
+Monday
+7 am–6 pm
+
+Tuesday
+7 am–6 pm
+
+
+When creating drafts for the new website, consider that the brand is not full established so we have creative freedom to experiment with these over the different designs 
+
+The primary truck used by this company is light blue, about this color - #2fa8eb 
+
+Diggers and other helping tools generally follow a gold and charcoal color scheme - #c4822d
+
+Red and white can be seen as safety tape
+
+Play with the design but consider the industry, it is not corporate, clear easy to read fonts will be more effective. This is also true for any copy that you generate that is not lorem ipsum, keep it simple and use English (UK) English spelling for this website.  
+
+I want to use this first draft to prompt the business owner for additional information so include additional sections 'About the owner' 'Our Work' with a gallery, 'Our Customers' (testimonials), 'Get a quote' call to action, 'Our Work' / Skills - Just to suggest a few. 
+
+

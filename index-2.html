@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lincs Haulage | Tipper Hire, Aggregates &amp; Muck Away</title>
+<meta name="description" content="Tipper hire, aggregates and muck away from Hanbury, near Droitwich. Call 07907 553161.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* STYLE 2 — "Daylight Grit": concrete, sky blue and black. Bright but rough: grain, hard shadows, one border weight */
+:root{
+  --concrete:#e6e3dd; --concrete-2:#d6d2ca; --ink:#15181b; --blue:#2fa8eb; --blue-dk:#127bb8;
+  --gold:#c4822d; --red:#d62828; --white:#fff; --muted:#555c62; --b:3px solid var(--ink);
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.13'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--concrete) var(--grain);color:var(--ink);font-size:18px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.tape{height:14px;background:repeating-linear-gradient(-45deg,var(--red) 0 18px,#fff 18px 36px);border-top:var(--b);border-bottom:var(--b)}
+.todo{display:inline-block;background:var(--ink);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;vertical-align:middle}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:"Big Shoulders Display";font-weight:900;font-size:1.3rem;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;padding:12px 24px;background:var(--blue);color:var(--ink);border:var(--b);box-shadow:5px 5px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+.btn.dark{background:var(--ink);color:#fff;box-shadow:5px 5px 0 var(--blue)}
+.btn.white{background:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:var(--b)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;height:70px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Big Shoulders Display";font-weight:900;font-size:1.7rem;text-transform:uppercase}
+.logo i{font-style:normal;background:var(--ink);color:var(--blue);padding:2px 9px}
+.nav ul{display:flex;gap:24px;list-style:none}
+.nav ul a{text-decoration:none;font-weight:700;font-size:.92rem;text-transform:uppercase;letter-spacing:.05em}
+.nav ul a:hover{color:var(--blue-dk)}
+.nav .btn{font-size:1.1rem;padding:8px 16px;box-shadow:3px 3px 0 var(--ink)}
+@media(max-width:920px){.nav ul{display:none}}
+.nav .btn{white-space:nowrap}
+@media(max-width:480px){.logo{font-size:1.35rem}.nav .btn{font-size:.95rem;padding:6px 10px}}
+
+/* hero */
+.hero{padding:56px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.hero .loc{display:inline-block;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.85rem;border-bottom:var(--b);padding-bottom:4px}
+.hero h1{font-size:clamp(3.6rem,10vw,8.4rem);margin:18px 0 22px}
+.hero h1 span{color:var(--blue);-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+.hero p{font-size:1.2rem;max-width:520px;margin-bottom:30px;color:#2c3237}
+.hero .ctas{display:flex;gap:18px;flex-wrap:wrap}
+.hero .photo{position:relative}
+.hero .photo img{border:var(--b);box-shadow:14px 14px 0 var(--blue);aspect-ratio:3/4;object-fit:cover;object-position:center 75%;width:100%}
+.hero .stamp{position:absolute;left:-26px;bottom:34px;background:#fff;border:var(--b);padding:12px 18px;transform:rotate(-3deg);box-shadow:5px 5px 0 var(--ink)}
+.hero .stamp b{font-family:"Big Shoulders Display";font-size:1.5rem;text-transform:uppercase;display:flex;align-items:center;gap:8px;line-height:1}
+.hero .stamp b::before{content:"";width:12px;height:12px;border-radius:50%;background:#1fbf62;border:2px solid var(--ink)}
+.hero .stamp.closed b::before{background:var(--red)}
+.hero .stamp span{font-size:.9rem;font-weight:500}
+@media(max-width:880px){.hero .wrap{grid-template-columns:1fr}.hero .photo{max-width:440px}.hero .stamp{left:10px}}
+
+/* black strip */
+.strip{background:var(--ink);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip div{padding:22px 12px;text-align:center;border-right:1px solid #3a3f44;font-weight:500;font-size:.92rem;text-transform:uppercase;letter-spacing:.05em}
+.strip div:last-child{border-right:0}
+.strip strong{display:block;font-family:"Big Shoulders Display";font-weight:900;font-size:2.1rem;color:var(--blue);line-height:1}
+@media(max-width:700px){.strip .wrap{grid-template-columns:1fr 1fr}.strip div{border-right:0;border-bottom:1px solid #3a3f44}}
+
+section{padding:90px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.head h2{font-size:clamp(2.8rem,7vw,5rem)}
+.head h2 small{display:block;font-family:"Work Sans";font-weight:700;font-size:.9rem;letter-spacing:.14em;color:var(--blue-dk);margin-bottom:8px}
+.head p{max-width:420px;color:var(--muted)}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+.svc article{background:#fff;border:var(--b);box-shadow:7px 7px 0 var(--ink);padding:26px}
+.svc .n{display:inline-block;background:var(--blue);border:var(--b);font-family:"Big Shoulders Display";font-weight:900;font-size:1.4rem;padding:0 10px;margin-bottom:16px}
+.svc h3{font-size:2.1rem;margin-bottom:10px}
+.svc p{color:var(--muted)}
+
+/* about */
+.about{background:var(--blue) var(--grain);border-top:var(--b);border-bottom:var(--b)}
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.portrait{aspect-ratio:4/5;background:#fff var(--grain);border:var(--b);box-shadow:12px 12px 0 var(--ink);display:grid;place-items:center;text-align:center;padding:30px}
+.portrait b{display:block;font-family:"Big Shoulders Display";font-size:2.2rem;text-transform:uppercase;line-height:1}
+.about h2{font-size:clamp(2.8rem,6vw,4.4rem);margin:14px 0 20px}
+.about p{margin-bottom:14px;font-size:1.08rem}
+.about ul{list-style:none;margin-top:18px;border-top:var(--b)}
+.about li{padding:12px 0 12px 34px;border-bottom:var(--b);position:relative;font-weight:500}
+.about li::before{content:"→";position:absolute;left:4px;font-weight:700}
+@media(max-width:860px){.about .wrap{grid-template-columns:1fr}.portrait{max-width:360px}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:18px}
+.gal figure{position:relative;border:var(--b);background:#fff;overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover;filter:contrast(1.08) saturate(1.05)}
+.gal .big{grid-column:span 2;grid-row:span 2}
+.gal .tall{grid-row:span 2}
+.gal figcaption{position:absolute;left:0;bottom:0;background:var(--ink);color:#fff;font-weight:700;text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;padding:5px 12px}
+.gal .ph{display:grid;place-items:center;text-align:center;font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em;color:var(--muted);background:var(--concrete-2) var(--grain)}
+@media(max-width:820px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gal .big{grid-column:span 2}}
+
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
+.rev figure{background:#fff;border:var(--b);box-shadow:7px 7px 0 var(--blue);padding:28px}
+.rev .stars{color:var(--gold);font-size:1.2rem;letter-spacing:3px}
+.rev blockquote{font-size:1.15rem;font-weight:500;margin:12px 0 18px}
+.rev figcaption{font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.05em}
+.rev figcaption span{display:block;color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0;font-size:.95rem}
+
+/* quote */
+.quote{background:var(--ink) var(--grain);color:#fff}
+.quote .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.quote h2{font-size:clamp(3.2rem,8vw,6rem);color:#fff}
+.quote h2 span{color:var(--blue)}
+.quote .phone{display:block;font-family:"Big Shoulders Display";font-weight:900;font-size:clamp(2.4rem,5vw,3.6rem);color:var(--blue);text-decoration:none;margin:22px 0 6px}
+.quote p{color:#c7cbcf}
+.callcard{background:var(--blue);color:var(--ink);border:3px solid #fff;box-shadow:10px 10px 0 #fff;padding:32px}
+.callcard h3{font-size:2.3rem;margin-bottom:6px}
+.callcard ul{list-style:none;margin:16px 0 26px;border-top:var(--b)}
+.callcard li{padding:10px 0;border-bottom:var(--b);font-weight:500}
+.cc-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.callcard small{font-size:.9rem}
+@media(max-width:880px){.quote .wrap{grid-template-columns:1fr}}
+
+/* find */
+.find .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:30px}
+.info{background:#fff;border:var(--b);box-shadow:7px 7px 0 var(--ink);padding:30px}
+.info h3{font-size:2rem;margin-bottom:12px}
+.info .addr{margin-bottom:24px}
+.hrs div{display:flex;justify-content:space-between;padding:8px 10px;border-bottom:1px solid var(--concrete-2)}
+.hrs .today{background:var(--blue);font-weight:700;border:2px solid var(--ink)}
+.mapw{border:var(--b);box-shadow:7px 7px 0 var(--ink);min-height:440px;background:#fff}
+.mapw iframe{width:100%;height:100%;min-height:434px;border:0;filter:grayscale(.3) contrast(1.05)}
+@media(max-width:860px){.find .wrap{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:#c7cbcf;padding:28px 0;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer a{color:var(--blue)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><i>LH</i>Lincs Haulage</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="#find">Find Us</a></li>
+    </ul>
+    <a class="btn" href="tel:+447907553161">07907 553161</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="loc">Hanbury · Droitwich · Worcestershire</span>
+        <h1>Stone in.<br><span>Muck out.</span></h1>
+        <p>8-wheel tipper hire, aggregate deliveries and muck away. Local, reliable and on site from 7am.</p>
+        <div class="ctas">
+          <a class="btn" href="tel:+447907553161">Call 07907 553161</a>
+          <a class="btn white" href="#quote">Get a quote</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="images/photo-1.jpg" alt="Lincs Haulage blue Scania tipper unloading on site next to a digger">
+        <div class="stamp" id="stamp"><b>Open today</b><span id="stamp-t">7am – 6pm</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <div><strong>8-wheel</strong>Tippers</div>
+      <div><strong>6 days</strong>A week</div>
+      <div><strong>7am</strong>Starts</div>
+      <div><strong>B60</strong>Local yard</div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head">
+        <h2><small>Skills &amp; services</small>What we do</h2>
+        <p>Our best guess so far. <span class="todo">Owner to confirm</span></p>
+      </div>
+      <div class="svc">
+        <article><span class="n">01</span><h3>Tipper hire</h3><p>8-wheel tipper and driver, by the load or by the day.</p></article>
+        <article><span class="n">02</span><h3>Aggregates</h3><p>Type 1, sand, gravel, ballast and topsoil delivered to site.</p></article>
+        <article><span class="n">03</span><h3>Muck away</h3><p>Soil and spoil taken off site so your job keeps moving.</p></article>
+        <article><span class="n">04</span><h3>Site clearance</h3><p>Working alongside diggers to clear and level ground.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <div class="portrait"><div><b>Owner photo</b>You, the lorry and some mud. Perfect.</div></div>
+      <div>
+        <span class="todo">About the owner: details needed</span>
+        <h2>The name behind the lorry</h2>
+        <p>Customers want to know who's turning up. A few honest lines about you will do more than any sales talk.</p>
+        <p>Please tell us:</p>
+        <ul>
+          <li>Your name and how long you've been in haulage</li>
+          <li>How Lincs Haulage got started</li>
+          <li>Licences, tickets and insurance you hold</li>
+          <li>The areas and jobs you cover</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="head">
+        <h2><small>Our work</small>On the job</h2>
+        <p>Real photos sell. Send us shots of recent jobs, the yard and the lorries.</p>
+      </div>
+      <div class="gal">
+        <figure class="big"><img src="images/photo-2.jpg" alt="Light blue Scania 8-wheel tipper"><figcaption>Scania P410 8-wheeler</figcaption></figure>
+        <figure class="tall"><img src="images/photo-1.jpg" alt="Tipper unloading next to a digger" style="object-position:center 75%"><figcaption>Tipping on site</figcaption></figure>
+        <figure class="ph">Your photo here</figure>
+        <figure class="ph">Your photo here</figure>
+        <figure class="ph">Your photo here</figure>
+        <figure class="ph">Your photo here</figure>
+        <figure class="ph">Your photo here</figure>
+        <figure class="ph">Your photo here</figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="tape"></div>
+
+  <section id="customers">
+    <div class="wrap">
+      <div class="head">
+        <h2><small>Our customers</small>Word on site</h2>
+        <p><span class="todo">Example reviews</span> To be replaced with real ones.</p>
+      </div>
+      <div class="rev">
+        <figure><div class="stars">★★★★★</div><blockquote>"First on site, last to complain. Exactly what you want from a haulier."</blockquote><figcaption>Example customer<span>Groundworks, Bromsgrove</span></figcaption></figure>
+        <figure><div class="stars">★★★★★</div><blockquote>"Rang in the morning, stone was on the drive after lunch."</blockquote><figcaption>Example customer<span>Homeowner, Droitwich</span></figcaption></figure>
+        <figure><div class="stars">★★★★★</div><blockquote>"Fair price, tidy driver, no hassle. We'll be back."</blockquote><figcaption>Example customer<span>Builder, Worcester</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="quote">
+    <div class="wrap">
+      <div>
+        <h2>Get a <span>quote</span></h2>
+        <a class="phone" href="tel:+447907553161">07907 553161</a>
+        <p>Mon–Fri 7am–6pm · Sat 8am–5pm</p>
+      </div>
+      <div class="callcard">
+        <h3>Get a quick price</h3>
+        <p>Give us a ring. It helps to have these to hand:</p>
+        <ul>
+          <li>What you need: stone, soil, tipper hire or muck away</li>
+          <li>Roughly how much (loads or tonnes)</li>
+          <li>The site postcode and access</li>
+          <li>When you need it</li>
+        </ul>
+        <div class="cc-ctas"><a class="btn dark" href="tel:+447907553161">Call 07907 553161</a><a class="btn white" href="sms:+447907553161">Text us</a></div>
+        <small>Can't get through? Leave a message or send a text and we'll call you back.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="find" class="find">
+    <div class="wrap">
+      <div class="info">
+        <h3>The yard</h3>
+        <p class="addr">Woolmere Pastures, Hanbury<br>Droitwich B60 4DD<br><a href="tel:+447907553161"><b>07907 553161</b></a></p>
+        <h3>Opening hours</h3>
+        <div class="hrs" id="hours">
+          <div data-d="1"><span>Monday</span><span>7am – 6pm</span></div>
+          <div data-d="2"><span>Tuesday</span><span>7am – 6pm</span></div>
+          <div data-d="3"><span>Wednesday</span><span>7am – 6pm</span></div>
+          <div data-d="4"><span>Thursday</span><span>7am – 6pm</span></div>
+          <div data-d="5"><span>Friday</span><span>7am – 6pm</span></div>
+          <div data-d="6"><span>Saturday</span><span>8am – 5pm</span></div>
+          <div data-d="0"><span>Sunday</span><span>Closed</span></div>
+        </div>
+      </div>
+      <div class="mapw"><iframe title="Map showing Lincs Haulage" loading="lazy" src="https://maps.google.com/maps?q=52.2633337,-2.058847&z=14&output=embed"></iframe></div>
+    </div>
+  </section>
+</main>
+
+<div class="tape"></div>
+<footer><div class="wrap"><span>© <span class="yr"></span> Lincs Haulage · Hanbury, Droitwich</span><a href="tel:+447907553161">07907 553161</a></div></footer>
+
+<script>
+document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+var row=document.querySelector('#hours [data-d="'+new Date().getDay()+'"]');
+if(row){row.classList.add('today');var t=row.lastElementChild.textContent,s=document.getElementById('stamp');
+  if(t==='Closed'){s.classList.add('closed');s.querySelector('b').textContent='Closed today';document.getElementById('stamp-t').textContent='Back Monday, 7am';}
+  else document.getElementById('stamp-t').textContent=t;}
+</script>
+</body>
+</html>
